@@ -1,3 +1,14 @@
+@font-face{
+   font-family: 'Roboto';
+   src: url('../fonts/ Roboto-Bold.eot');
+   src: url('../fonts/ Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/ Roboto-Bold.woff') format('woff'),
+      url('../fonts/ Roboto-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
 @font-face {
    font-family: 'Roboto Slab';
    src: url('../fonts/ RobotoSlab-Bold.eot');
@@ -10,6 +21,7 @@
    font-display: swap;
 } 
 body{
+   padding: 77px 100px;
    margin: 0;
    min-width: 960px;
 }
@@ -20,12 +32,27 @@ body{
 }
 .wrapper{
    margin: 0 auto;
-   max-width: 960px ;
+   max-width: 960px;
 }
 .column{
    display: inline-block;
-   margin: 0 14px;
    width: 219px;
    vertical-align: middle;
    box-sizing: border-box;
+}
+.first h1{
+   padding: 0  0 70px;
+   font-size: 30px;
+   color: #1f222c;
+   font-weight: 700;
+   font-family: "Roboto Slab";
+   text-align: center;
+}
+.first p{
+   font-size: 20px;
+   letter-spacing: 0px;
+   color: #b3b3b3;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-family: "Roboto";
 }
