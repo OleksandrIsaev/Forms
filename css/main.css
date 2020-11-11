@@ -1,3 +1,31 @@
+@font-face {
+   font-family: 'Roboto Slab';
+   src: url('../fonts/ RobotoSlab-Bold.eot');
+   src: url('../fonts/ RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ RobotoSlab-Bold.woff2') format('woff2'),
+       url('../fonts/ RobotoSlab-Bold.woff') format('woff'),
+       url('../fonts/ RobotoSlab-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+} 
 body{
+   margin: 0;
    min-width: 960px;
+}
+.clear:after{
+   content: "";
+   display: block;
+   clear: both;
+}
+.wrapper{
+   margin: 0 auto;
+   max-width: 960px ;
+}
+.column{
+   display: inline-block;
+   margin: 0 14px;
+   width: 219px;
+   vertical-align: middle;
+   box-sizing: border-box;
 }
