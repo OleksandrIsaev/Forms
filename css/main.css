@@ -56,3 +56,10 @@ body{
    font-weight: 700;
    font-family: "Roboto";
 }
+.form1{
+   display: inline-block;
+   margin: 330px 40px;
+   margin: 0;
+   padding: 0;
+   display: block;
+}
