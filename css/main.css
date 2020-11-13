@@ -39,7 +39,7 @@ body{
 }
 .column{
    display: inline-block;
-   width: 219px;
+   width: 330px;
    vertical-align: middle;
    box-sizing: border-box;
 }
@@ -62,19 +62,45 @@ body{
 .forms{
    display: block;
 }
-.form1 select,
 .form1 input{
+   padding: 0 16px;
    margin: 10px 0;
    width: 330px;
    height: 40px;
+   box-sizing: border-box;
+   border-color: 1px solid #cccccc;
+   font-size: 14px;
+   color: #b3b3b3;
+   font-weight: 400;
+   font-family: "Roboto";
+}
+.form1 select{
+   padding: 0 16px;
+   margin: 10px 0;
+   width: 330px;
+   height: 40px;
+   font-size: 14px;
+   color: #b3b3b3;
+   font-weight: 400;
+   font-family: "Roboto";
+   border-color: 1px solid #cccccc;
 }
 .form1 textarea{
+   padding: 15px 16px;
    width: 330px;
    height: 130px;
-}
-.registration{
-   width: 330px;
-   height: 43px;
+   box-sizing: border-box;
    border-radius: 3px;
+   font-weight: 400;
+   font-family: "Roboto"; 
+   color: #b3b3b3;
+   border-color: #cccccc;
+}
+.{
+   font-size: 14px;
+   font-weight: 700;
+   font-family: "Roboto";
+   color: #fff;
    background-color: #12d661; 
+   cursor: pointer;
 }
