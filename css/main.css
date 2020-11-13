@@ -21,7 +21,7 @@
    font-display: swap;
 } 
 body{
-   padding: 77px 100px;
+   padding: 50px 100px;
    margin: 0;
    min-width: 960px;
 }
@@ -34,6 +34,9 @@ body{
    margin: 0 auto;
    max-width: 960px;
 }
+.row{
+   display: block;
+}
 .column{
    display: inline-block;
    width: 219px;
@@ -41,14 +44,14 @@ body{
    box-sizing: border-box;
 }
 .first h1{
-   padding: 0  0 70px;
+   padding: 0  0 36px;
    font-size: 30px;
    color: #1f222c;
    font-weight: 700;
    font-family: "Roboto Slab";
    text-align: center;
 }
-.first p{
+.row p{
    font-size: 20px;
    letter-spacing: 0px;
    color: #b3b3b3;
@@ -56,10 +59,16 @@ body{
    font-weight: 700;
    font-family: "Roboto";
 }
-.form1{
-   display: inline-block;
-   margin: 330px 40px;
-   margin: 0;
-   padding: 0;
+.forms{
    display: block;
+}
+.form1 select,
+.form1 input{
+   margin: 10px 0;
+   width: 330px;
+   height: 40px;
+}
+.form1 textarea{
+   width: 330px;
+   height: 130px;
 }
