@@ -54,10 +54,10 @@ body{
 .first h1{
    padding: 0  0 36px;
    font-size: 30px;
-   color: #1f222c;
    font-weight: 700;
-   font-family: "Roboto Slab";
    text-align: center;
+   font-family: "Roboto Slab"; 
+   color: #1f222c;
 }
 .row p{
    font-size: 20px;
@@ -65,7 +65,7 @@ body{
    color: #b3b3b3;
    text-transform: uppercase;
    font-weight: 700;
-   font-family: "Roboto";
+   font-family: "Arial"; 
 }
 .forms{
    display: block;
@@ -80,7 +80,7 @@ body{
    font-size: 14px;
    color: #b3b3b3;
    font-weight: 400;
-   font-family: "Roboto Slab";
+   font-family: "Arial"; 
 }
 .form1 select{
    padding: 0 16px;
@@ -88,9 +88,10 @@ body{
    width: 330px;
    height: 40px;
    font-size: 14px;
+   cursor: pointer;
    color: #000;
    font-weight: 400;
-   font-family: "Roboto";
+   font-family: "Arial"; 
    border-color: 1px solid #cccccc;
 }
 .form1 textarea{
@@ -100,7 +101,7 @@ body{
    box-sizing: border-box;
    border-radius: 3px;
    font-weight: 400;
-   font-family: "Roboto"; 
+   font-family: "Arial"; 
    color: #b3b3b3;
    border-color: #cccccc;
 }
@@ -112,7 +113,7 @@ input.registration{
    border-radius: 3px;
    font-size: 14px;
    font-weight: 700;
-   font-family: "Roboto";
+   font-family: "Arial";
    color: #fff;
    background-color: #12d661; 
    cursor: pointer;
