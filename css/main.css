@@ -1,11 +1,11 @@
-@font-face{
+@font-face {
    font-family: 'Roboto';
-   src: url('../fonts/Roboto-Bold.eot');
-   src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Roboto-Bold.woff2') format('woff2'),
-      url('../fonts/Roboto-Bold.woff') format('woff'),
-      url('../fonts/Roboto-Bold.ttf') format('truetype');
-   font-weight: bold;
+   src: url('Roboto-Regular.eot');
+   src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Roboto-Regular.woff2') format('woff2'),
+       url('Roboto-Regular.woff') format('woff'),
+       url('Roboto-Regular.ttf') format('truetype');
+   font-weight: normal;
    font-style: normal;
    font-display: swap;
 }
@@ -31,8 +31,16 @@ body{
    clear: both;
 }
 .wrapper{
+   position: relative;
    margin: 0 auto;
    max-width: 960px;
+}
+.wrapper::after{ 
+   content: "";
+   position: absolute;
+   height: 50px;
+   width: 100%;
+   border-bottom: 1px solid #dcdcde;
 }
 .row{
    display: block;
@@ -72,7 +80,7 @@ body{
    font-size: 14px;
    color: #b3b3b3;
    font-weight: 400;
-   font-family: "Roboto";
+   font-family: "Roboto Slab";
 }
 .form1 select{
    padding: 0 16px;
@@ -80,7 +88,7 @@ body{
    width: 330px;
    height: 40px;
    font-size: 14px;
-   color: #b3b3b3;
+   color: #000;
    font-weight: 400;
    font-family: "Roboto";
    border-color: 1px solid #cccccc;
@@ -109,3 +117,5 @@ input.registration{
    background-color: #12d661; 
    cursor: pointer;
 }
+
+
