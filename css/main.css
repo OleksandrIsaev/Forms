@@ -72,3 +72,9 @@ body{
    width: 330px;
    height: 130px;
 }
+.registration{
+   width: 330px;
+   height: 43px;
+   border-radius: 3px;
+   background-color: #12d661; 
+}
