@@ -96,7 +96,12 @@ body{
    color: #b3b3b3;
    border-color: #cccccc;
 }
-.{
+input.registration{
+   width: 330px;
+   height: 43px;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 3px;
    font-size: 14px;
    font-weight: 700;
    font-family: "Roboto";
