@@ -51,7 +51,7 @@ body{
    vertical-align: middle;
    box-sizing: border-box;
 }
-.first h1{
+.begining h1{
    padding: 0  0 36px;
    font-size: 30px;
    font-weight: 700;
@@ -76,7 +76,7 @@ body{
    width: 330px;
    height: 40px;
    box-sizing: border-box;
-   border-color: 1px solid #cccccc;
+   border-color: 1px solid #ccc;
    font-size: 14px;
    color: #b3b3b3;
    font-weight: 400;
@@ -92,7 +92,7 @@ body{
    color: #000;
    font-weight: 400;
    font-family: "Arial"; 
-   border-color: 1px solid #cccccc;
+   border-color: 1px solid #ccc;
 }
 .form1 textarea{
    padding: 15px 16px;
@@ -103,7 +103,7 @@ body{
    font-weight: 400;
    font-family: "Arial"; 
    color: #b3b3b3;
-   border-color: #cccccc;
+   border-color: #ccc;
 }
 input.registration{
    width: 330px;
@@ -117,6 +117,15 @@ input.registration{
    color: #fff;
    background-color: #12d661; 
    cursor: pointer;
+}
+.first{
+   display: block;
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   color: #1f222c;
+   font-weight: 400;
+   font-family: "Arial";
 }
 
 
