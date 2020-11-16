@@ -24,13 +24,15 @@
                     <div class="form1 column">
                         <input type="text" placeholder="Введіть ім'я">
                         <input type="text" placeholder="Email" maxlength="120">
-                        <select>
-                            <option>Ваше місто</option>
-                            <option>Хмельницький</option>
-                            <option>Вінниця</option>
-                            <option>Львів</option>
-                            <option>Київ</option>
-                        </select>
+                        <label>
+                            <select>
+                                <option value="msto" disabled selected  class="simple_select" >Ваше місто</option>
+                                <option value="khmelnitsky">Хмельницький</option>
+                                <option value="vinnytsia">Вінниця</option>
+                                <option value="lviv">Львів</option>
+                                <option value="kyiv">Київ</option>
+                            </select>
+                        </label>
                         <textarea rows="3" cols="30" maxlength="100" placeholder="Email"></textarea>
                         <input class="registration" type="submit" value="Зареєструватися">
                     </div>
@@ -43,19 +45,19 @@
                     <div class="form2">
                         <p>02. елементи</p>
                         <div class="first">
-                            <label><input class="left" id="forinput" type="radio">Нова Пошта</label>
-                            <label><input class="left" id="forinput" type="radio">Кур’єр</label>
-                            <label><input class="left" id="forinput" type="radio">Самовивіз</label>
+                            <label><input checked name="1" class="left" type="radio">Нова Пошта</label>
+                            <label><input name="1" class="left" type="radio">Кур’єр</label>
+                            <label><input name="1" class="left" type="radio">Самовивіз</label>
                         </div>
                         <div class="second">
                             <label><input class="right" type="checkbox">Прочитав умови договору</label>
-                            <label><input class="right" type="checkbox">Згідний з ПДВ 9%</label>
+                            <label><input checked class="right" type="checkbox">Згідний з ПДВ 9%</label>
                             <label><input class="right" type="checkbox">Отримувати новини на ел. пошту</label>
                         </div>
                         <fieldset>
                             <p>Статус
                                 <label><input type="checkbox">Новинки</label>
-                                <label><input type="checkbox">Акційні товари</label>
+                                <label><input checked type="checkbox">Акційні товари</label>
                                 <label><input type="checkbox">Розпродаж</label>
                             </p>
                             <p>Дата

@@ -25,6 +25,11 @@ body{
    margin: 0;
    min-width: 960px;
 }
+input,
+select,
+textarea{
+   box-sizing: border-box;
+}
 .clear:after{
    content: "";
    display: block;
@@ -49,7 +54,6 @@ body{
    display: inline-block;
    width: 330px;
    vertical-align: middle;
-   box-sizing: border-box;
 }
 .begining h1{
    padding: 0  0 36px;
@@ -75,7 +79,6 @@ body{
    margin: 10px 0;
    width: 330px;
    height: 40px;
-   box-sizing: border-box;
    border-color: 1px solid #ccc;
    font-size: 14px;
    color: #b3b3b3;
@@ -93,23 +96,35 @@ body{
    font-weight: 400;
    font-family: "Arial"; 
    border-color: 1px solid #ccc;
+   appearance: none;
+}
+.simple_select ::after{
+   content: "";
+   position: absolute;
+   width: 9px;
+   height: 5px;
+   right: 20px;
+   top: 20px;
+   border-right: 1px solid #1f222c;
+   border-bottom: 1px solid #1f222c;
+   transform: rotate(-45deg);
+   transition: all 1s ease;
 }
 .form1 textarea{
    padding: 15px 16px;
    width: 330px;
    height: 130px;
-   box-sizing: border-box;
    border-radius: 3px;
    font-weight: 400;
    font-family: "Arial"; 
    color: #b3b3b3;
    border-color: #ccc;
+   resize: horizontal;
 }
 input.registration{
    width: 330px;
    height: 43px;
    border: none;
-   box-sizing: border-box;
    border-radius: 3px;
    font-size: 14px;
    font-weight: 700;
