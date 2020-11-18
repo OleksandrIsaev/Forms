@@ -23,10 +23,10 @@
                     <p>01. проста форма</p>
                     <div class="form1 column">
                         <input type="text" placeholder="Введіть ім'я">
-                        <input type="text" placeholder="Email" maxlength="120">
-                        <label>
+                        <input type="email" placeholder="Email" maxlength="120">
+                        <label class="simple_select">
                             <select>
-                                <option value="msto" disabled selected  class="simple_select" >Ваше місто</option>
+                                <option value="msto" disabled selected>Ваше місто</option>
                                 <option value="khmelnitsky">Хмельницький</option>
                                 <option value="vinnytsia">Вінниця</option>
                                 <option value="lviv">Львів</option>
@@ -47,12 +47,13 @@
                         <div class="first">
                             <label><input checked name="1" class="left" type="radio">Нова Пошта</label>
                             <label><input name="1" class="left" type="radio">Кур’єр</label>
-                            <label><input name="1" class="left" type="radio">Самовивіз</label>
+                            <label><input disabled selected name="1" class="left" type="radio">Самовивіз</label>
                         </div>
                         <div class="second">
                             <label><input class="right" type="checkbox">Прочитав умови договору</label>
                             <label><input checked class="right" type="checkbox">Згідний з ПДВ 9%</label>
-                            <label><input class="right" type="checkbox">Отримувати новини на ел. пошту</label>
+                            <label><input disabled selected class="right" type="checkbox">Отримувати новини на ел.
+                                пошту</label>
                         </div>
                         <fieldset>
                             <p>Статус
@@ -61,8 +62,7 @@
                                 <label><input type="checkbox">Розпродаж</label>
                             </p>
                             <p>Дата
-                                <select>
-                                    <option>2018-03-17 <img src="" alt=""></option>
+                                    <label><input type="date"></label>
                             </p>
                         </fieldset>
                     </div>

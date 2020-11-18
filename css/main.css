@@ -80,6 +80,7 @@ textarea{
    width: 330px;
    height: 40px;
    border-color: 1px solid #ccc;
+   outline: none;
    font-size: 14px;
    color: #b3b3b3;
    font-weight: 400;
@@ -95,10 +96,12 @@ textarea{
    color: #000;
    font-weight: 400;
    font-family: "Arial"; 
+   border-radius: 3px;
    border-color: 1px solid #ccc;
    appearance: none;
+   outline: none;
 }
-.simple_select ::after{
+.simple_select ::after :first-child {
    content: "";
    position: absolute;
    width: 9px;
@@ -109,6 +112,11 @@ textarea{
    border-bottom: 1px solid #1f222c;
    transform: rotate(-45deg);
    transition: all 1s ease;
+}
+.simple_select :first-child option{
+   position: relative;
+   display: inline-block;
+   width: 100%;
 }
 .form1 textarea{
    padding: 15px 16px;
@@ -142,6 +150,23 @@ input.registration{
    color: #1f222c;
    font-weight: 400;
    font-family: "Arial";
+}
+.second{
+   display: block;
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   color: #1f222c;
+   font-weight: 400;
+   font-family: "Arial";
+}
+.first :last-child{
+   font-size: 14px;
+   color: #b3b3b3;
+}
+.second :last-child{
+   font-size: 14px;
+   color: #b3b3b3;   
 }
 
 
