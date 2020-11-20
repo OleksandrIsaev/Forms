@@ -38,12 +38,11 @@ textarea{
 .wrapper{
    position: relative;
    margin: 0 auto;
-   max-width: 960px;
+   max-width: 990px;
 }
 .wrapper::after{ 
    content: "";
    position: absolute;
-   height: 50px;
    width: 100%;
    border-bottom: 1px solid #dcdcde;
 }
@@ -82,7 +81,6 @@ textarea{
    border-color: 1px solid #ccc;
    outline: none;
    font-size: 14px;
-   color: #b3b3b3;
    font-weight: 400;
    font-family: "Arial"; 
 }
@@ -129,7 +127,7 @@ textarea{
    border-color: #ccc;
    resize: horizontal;
 }
-input.registration{
+.registration{
    width: 330px;
    height: 43px;
    border: none;
@@ -142,17 +140,28 @@ input.registration{
    cursor: pointer;
    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
 }
+.form2{
+   padding: 45px 0;
+}
 .first{
-   display: block;
-   margin: 0;
-   padding: 0;
+   display: inline-block;
+   width: 165px;
+   height: 110px;
+}
+.third p,
+.second p,
+.first p{
+   text-transform: none;
+   font-weight: normal;
    font-size: 14px;
    color: #1f222c;
    font-weight: 400;
    font-family: "Arial";
 }
 .second{
-   display: block;
+   display: inline-block;
+   width: 300px;
+   height: 110px;
    margin: 0;
    padding: 0;
    font-size: 14px;
@@ -160,13 +169,30 @@ input.registration{
    font-weight: 400;
    font-family: "Arial";
 }
-.first :last-child{
+.third{
+   display: inline-block;
+   width: 473px;
+   height: 110px;
+   border-radius: 3px;
+   border-color: 1px solid #e5e5e5;
+   background-color: #f7f7f7;
+}
+.third p{
+   display: inline-block;
+   margin: 20px 17px;
+}
+.third p :first-child{
+   text-transform: none;
+   font-weight: normal;
    font-size: 14px;
    color: #b3b3b3;
+   font-family: Arial;
 }
-.second :last-child{
-   font-size: 14px;
-   color: #b3b3b3;   
+.third :last-child{
+   padding: 8x;
+   border-radius: 3px;
+   border-color: #cccccc;
 }
+
 
 
