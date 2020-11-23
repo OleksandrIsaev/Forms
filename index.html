@@ -20,13 +20,17 @@
         <div class="forms">
             <div class="wrapper">
                 <div class="row">
-                    <p>01. проста форма</p>
+                    <h2>01. проста форма</h2>
                     <div class="form1 column">
-                        <input type="text" placeholder="Введіть ім'я">
-                        <input type="email" placeholder="Email" maxlength="120">
-                        <label class="simple_select">
+                        <label>
+                            <input type="text" placeholder="Введіть ім'я">
+                        </label>
+                        <label>
+                            <input type="email" placeholder="Email" maxlength="120">
+                        </label>
+                        <label class="opener">
                             <select>
-                                <option value="msto" disabled selected>Ваше місто</option>
+                                <option value="misto" disabled selected>Ваше місто</option>
                                 <option value="khmelnitsky">Хмельницький</option>
                                 <option value="vinnytsia">Вінниця</option>
                                 <option value="lviv">Львів</option>
@@ -39,19 +43,40 @@
                 </div>
             </div>
         </div>
+        <div class="form6">
+                <h2>06. фіксована форма</h2>
+                <i>Логин</i>
+                <p>
+                    <input type="login">
+                </p>
+                <i>Пароль</i>
+                <p>
+                    <input type="password">
+                </p>
+                <h3>Забули пароль?</h3>
+                <p>
+                    <label><input class="right" type="checkbox">Запам’ятати пароль</label>
+                </p>
+                <p>
+                    <input class="registration" type="submit" value="Увійти">
+                </p>
+            </div>
+        </div>
         <div class="wrapper">
             <div class="row">
                 <div class="form2">
-                    <p>02. елементи</p>
+                    <h2>02. елементи</h2>
                     <div class="first">
                         <p>
-                            <label><input checked name="1" class="left" type="radio">Нова Пошта</label>
+                            <label for="nova-poshta"><input class="radio_knopka" checked name="1" class="left"
+                                    type="radio">НоваПошта</label>
                         </p>
                         <p>
-                            <label><input name="1" class="left" type="radio">Кур’єр</label>
+                            <label><input class="radio_knopka" name="1" class="left" type="radio">Кур’єр</label>
                         </p>
                         <p>
-                            <label><input disabled selected name="1" class="left" type="radio">Самовивіз</label>
+                            <label><input class="radio_knopka" disabled selected name="1" class="left"
+                                    type="radio">Самовивіз</label>
                         </p>
                     </div>
                     <div class="second">
@@ -62,8 +87,9 @@
                             <label><input checked class="right" type="checkbox">Згідний з ПДВ 9%</label>
                         </p>
                         <p>
-                            <label><input disabled selected class="right" type="checkbox">Отримувати новини на ел.
-                                пошту</label>
+                            <label>
+                                <input disabled selected class="right" type="checkbox">Отримувати новини на ел. пошту
+                            </label>
                         </p>
                     </div>
                     <div class="third">
@@ -82,7 +108,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </head>
 </body>
 
