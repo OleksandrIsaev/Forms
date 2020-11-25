@@ -1,10 +1,10 @@
 @font-face {
    font-family: 'Roboto';
-   src: url('Roboto-Regular.eot');
-   src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-       url('Roboto-Regular.woff2') format('woff2'),
-       url('Roboto-Regular.woff') format('woff'),
-       url('Roboto-Regular.ttf') format('truetype');
+   src: url('../fonts/Roboto-Regular.eot');
+   src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Roboto-Regular.woff2') format('woff2'),
+       url('../fonts/Roboto-Regular.woff') format('woff'),
+       url('../fonts/Roboto-Regular.ttf') format('truetype');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
@@ -37,7 +37,6 @@ textarea{
    clear: both;
 }
 .wrapper{
-   position: relative;
    margin: 0 auto;
    max-width: 990px;
 }
@@ -65,7 +64,9 @@ h2{
    font-weight: 700;
 }
 .forms{
-   display: block;
+   display: inline-block;
+   padding-left: 100px;
+   padding-right: 350px;
 }
 .form1 input{
    padding: 0 16px;
@@ -81,8 +82,10 @@ h2{
 .form1 textarea:hover,
 .form1 select:hover,
 .form1 input:hover{
-   border: none;
+   border-radius: 3px;
    filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
+   background-color: #ffffff;
+   border: 1px solid #3e6aff;
 }
 .form1 select{
    padding: 0 16px;
@@ -102,6 +105,21 @@ h2{
 .opener {
    position: relative;
    display: inline-block;
+}
+.highttop{
+   margin: 0;
+   padding: 0;
+}
+.highttop input{
+   border-radius: 3px;
+   border: none;
+   background-color: #12d661;
+}
+.highttop input:hover{
+   border: none;
+   border-radius: 3px;
+   filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+   background-color: #07be51;
 }
 .opener::after{
    content: "";
@@ -137,9 +155,99 @@ h2{
    font-weight: 700;
    color: #fff;
    border: none;
-   background-color: #12d661; 
    cursor: pointer;
+   border-radius: 3px;
+   background-color: #12d661; 
+}
+.registration:hover{
+   border-radius: 3px;
    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+   background-color: #07be51; 
+}
+.form_6{
+   position: fixed;
+   z-index: 1;
+   display: inline-block;
+}
+.form6 p{
+   margin: 0;
+   padding: 0;
+}
+.form6{
+   padding: 25px;
+   display: inline-block;
+   box-sizing: border-box;
+   position: fixed;
+   z-index: 1;
+   width: 310px;
+   height: 280px;
+   background-color: #fafafa;
+   border: none;
+   border-radius: 3px;
+   font: 400 14px "Roboto";
+   filter: drop-shadow(0px 5px 6px rgba(0,0,0,0.15));
+}
+.form6 i{
+   font-style: normal;
+   font-size: 13px;
+   color: #b3b3b3;
+   font-weight: 400;
+   font-family: "Roboto";
+}
+.login{
+   margin-top: 5px;
+   margin-bottom: 5px;
+   width: 265px;
+   height: 35px;
+}
+.login:hover{
+   border-radius: 3px;
+   filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
+   border: 1px solid #3e6aff;
+}
+.form6 h3{
+   font-size: 13px;
+   color: #3e6aff;
+   font-weight: 400;
+   font-family: "Roboto";
+}
+.right{
+   padding-right: 5px;
+}
+.width input{
+   margin: 0;
+}
+.registration2{
+   margin-top: 10px;
+   width: 260px;
+   height: 43px;
+   color: #fff;
+   border: none;
+   border-radius: 3px;
+   background-color: #12d661;
+}
+.registration2:hover{
+   border-radius: 3px;
+   filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+   background-color: #07be51;
+}
+.exit::after{
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 2px;
+   right: 10px;
+   transform: rotate(45deg);
+   background-color: #b3b3b3;
+}
+.exit::before{
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 2px;
+   right: 10px;
+   transform: rotate(-45deg);
+   background-color: #b3b3b3;
 }
 .form2{
    padding: 45px 0;
@@ -175,7 +283,7 @@ h2{
 }
 .third p{
    display: inline-block;
-   margin: 20px 17px;
+   margin: 20px 15px;
 }
 .third p :first-child{
    text-transform: none;
