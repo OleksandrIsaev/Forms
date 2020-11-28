@@ -230,6 +230,7 @@ h2{
 .login{
    margin-top: 5px;
    margin-bottom: 5px;
+   padding: 12px;
    width: 265px;
    height: 35px;
 }
