@@ -234,6 +234,7 @@ h2{
    height: 35px;
 }
 .login:hover{
+   padding: 12px;
    border-radius: 3px;
    filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
    border: 1px solid #3e6aff;
