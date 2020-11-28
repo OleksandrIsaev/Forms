@@ -64,9 +64,8 @@ h2{
    font-weight: 700;
 }
 .forms{
+   padding-left: 125px;
    display: inline-block;
-   padding-left: 100px;
-   padding-right: 350px;
 }
 .form1 input{
    padding: 0 16px;
@@ -166,8 +165,42 @@ h2{
 }
 .form_6{
    position: fixed;
+   padding-top: 170px;
+   padding-right: 270px;
+   right: 0;
+   top: 0;
+}
+.exit:checked ~ h2,
+.exit:checked~.form6{
+   display: none;
+}
+.exit:checked{
+   display: none;
+}
+.exit{
+   position: absolute;
+   appearance: none;
+   left: 300px;
+   bottom: 255px;
+   margin: 10px;
+   right: 0;
    z-index: 1;
-   display: inline-block;
+   cursor: pointer;
+}
+.exit::after,
+.exit::before{
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 2px;
+   right: 10px;
+   transform: rotate(45deg);
+   background-color: #b3b3b3;
+}
+.exit::after{
+
+   transform: rotate(-45deg);
+
 }
 .form6 p{
    margin: 0;
@@ -177,7 +210,7 @@ h2{
    padding: 25px;
    display: inline-block;
    box-sizing: border-box;
-   position: fixed;
+   
    z-index: 1;
    width: 310px;
    height: 280px;
