@@ -39,6 +39,11 @@ textarea{
 .wrapper{
    margin: 0 auto;
    max-width: 990px;
+   border-bottom: 1px solid #dcdcde;
+}
+.wrapper1{
+   margin: 0 auto;
+   max-width: 990px;
 }
 .row{
    display: block;
@@ -48,8 +53,10 @@ textarea{
    width: 330px;
    vertical-align: middle;
 }
+
+/*01. проста форма*/
+
 .begining h1{
-   padding: 0  0 36px;
    font-size: 30px;
    font-weight: 700;
    text-align: center;
@@ -57,6 +64,7 @@ textarea{
    color: #1f222c;
 }
 h2{
+   margin-top: 20px;
    font-size: 20px;
    letter-spacing: 0px;
    color: #b3b3b3;
@@ -64,8 +72,8 @@ h2{
    font-weight: 700;
 }
 .forms{
-   padding-left: 125px;
    display: inline-block;
+   padding-bottom: 25px;
 }
 .form1 input{
    padding: 0 16px;
@@ -92,7 +100,6 @@ h2{
    width: 330px;
    height: 40px;
    font-size: 14px;
-   cursor: pointer;
    color: #000;
    font-weight: 400;
    border-radius: 3px;
@@ -100,6 +107,7 @@ h2{
    appearance: none;
    outline: none;
    background-color: transparent;
+   cursor: pointer;
 }
 .opener {
    position: relative;
@@ -163,12 +171,16 @@ h2{
    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
    background-color: #07be51; 
 }
+
+/*06. фіксована форма*/
+
 .form_6{
-   position: fixed;
-   padding-top: 170px;
    padding-right: 270px;
+   padding-top: 135px;
+   position: fixed;
    right: 0;
    top: 0;
+   z-index: 1;
 }
 .exit:checked ~ h2,
 .exit:checked~.form6{
@@ -198,9 +210,7 @@ h2{
    background-color: #b3b3b3;
 }
 .exit::after{
-
    transform: rotate(-45deg);
-
 }
 .form6 p{
    margin: 0;
@@ -208,9 +218,9 @@ h2{
 }
 .form6{
    padding: 25px;
+   margin-top: 25px;
    display: inline-block;
    box-sizing: border-box;
-   
    z-index: 1;
    width: 310px;
    height: 280px;
@@ -245,9 +255,11 @@ h2{
    color: #3e6aff;
    font-weight: 400;
    font-family: "Roboto";
+   cursor: pointer;
 }
 .right{
    padding-right: 5px;
+   cursor: pointer;
 }
 .width input{
    margin: 0;
@@ -260,13 +272,15 @@ h2{
    border: none;
    border-radius: 3px;
    background-color: #12d661;
+   cursor: pointer;
 }
 .registration2:hover{
    border-radius: 3px;
    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
    background-color: #07be51;
 }
-.exit::after{
+.exit::after,
+.exit::before{
    content: "";
    position: absolute;
    width: 10px;
@@ -276,60 +290,262 @@ h2{
    background-color: #b3b3b3;
 }
 .exit::before{
-   content: "";
-   position: absolute;
-   width: 10px;
-   height: 2px;
-   right: 10px;
    transform: rotate(-45deg);
-   background-color: #b3b3b3;
 }
-.form2{
-   padding: 45px 0;
+
+/*02. елементи*/
+.elements h2{
+   margin-top: 50px;
 }
-.first{
-   position: relative;
-   display: inline-block;
-   width: 165px;
-   height: 110px;
+.radio-buttons,
+.check-buttons,
+.date{
+   float: left;
+   vertical-align: top;
 }
-.third p,
-.second p,
-.first p{
-   text-transform: none;
-   font-weight: normal;
-   color: #1f222c;
+.radio-buttons p:first-child,
+.check-buttons p:first-child{
+    margin-top: 0;
 }
-.second{
-   display: inline-block;
-   width: 300px;
-   height: 110px;
-   margin: 0;
-   padding: 0;
-   color: #1f222c;
+.radio-buttons{
+   max-width: 165px;
+   width: 100%;
 }
-.third{
-   display: inline-block;
-   width: 473px;
-   height: 110px;
+.check-buttons{
+   max-width: 345px;
+   width: 100%;
+}
+.date{
+   margin-bottom: 50px;
+   max-width: 473px;
    border-radius: 3px;
-   border-color: 1px solid #e5e5e5;
+   border: 1px solid #e5e5e5;
+}
+.status{
+   width: 100%;
+   box-sizing: border-box;
+   border-collapse: collapse;
    background-color: #f7f7f7;
 }
-.third p{
-   display: inline-block;
-   margin: 20px 15px;
+.delivery1,
+.delivery2,
+.radio-man,
+.radio-woman,
+.other,
+.r-men,
+.r-women,
+.pdv{
+   position: absolute;
+   visibility: hidden;
 }
-.third p :first-child{
-   text-transform: none;
-   font-weight: normal;
+.pdv,
+.r-men+label,
+.r-women+label,
+.delivery1+label,
+.delivery2+label{
+   position: relative;
+   padding-left: 25px;
+   color: #1f222c;
+   font: 400 14px "Roboto";
+}
+.delivery1:disabled+label,
+.delivery2:disabled+label{
    color: #b3b3b3;
 }
-.third :last-child{
-   padding: 8x;
-   border-radius: 3px;
-   border-color: #cccccc;
+.r-men+label:before,
+.r-women+label:before,
+.delivery1+label:before{
+   content: '';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #f1f1f1;
+   border-radius: 50%;
+   left: 0;
+   top: -2px;
 }
+.r-men:checked+label:before,
+.r-women:checked+label:before,
+.delivery1:checked+label:before,
+.delivery2:checked+label:before{
+   border: 1px solid #3e6aff;
+}
+.r-men:checked+label:after,
+.r-women:checked+label:after,
+.delivery1:checked+label:after{
+   content: '';
+   position: absolute;
+   width: 8px;
+   height: 8px;
+   left: 5px;
+   top: 3px;
+   border-radius: 50%;
+   background-color: #3e6aff;
+}
+.pdv+label:before,
+.delivery2+label:before{
+   content: '';
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   left: 0;
+   top: -2px;
+   border-radius: 3px;
+   border: 1px solid #ccc;
+   background-color: #fff;
+}
+.pdv:checked+label:before,
+.delivery2:checked+label:before{
+   border: 1px solid #3e6aff;
+}
+.pdv:checked+label:after,
+.delivery2:checked+label:after{
+   content: '';
+   position: absolute;
+   width: 6px;
+   height: 3px;
+   left: 5px;
+   top: 4px;
+   transform: rotate(-45deg);
+   border-left: 2px solid #244dd7;
+   border-bottom: 2px solid #244dd7;
+}
+.status td:first-child{
+   padding: 18px 18px 12px;
+   text-align: left;
+   color: #b3b3b3;
+   font: 700 14px "Roboto";
+   width: 20.5%;
+}
+.data,
+.data:focus{
+   padding: 10px;
+   border: none;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   outline: none;
+}
+::-webkit-calendar-picker-indicator {
+   background-image: url(../img/calendar.png);
+   outline: none;
+}
+.date .delivery2+label{
+   margin-right: 20px;
+}
+.status tr{
+   vertical-align: text-bottom;
+}
+.status tr:last-child td{
+   padding-bottom: 20px;
+}
+
+/*03.Стилізовані чекбокси*/
+
+.st-checks{
+   margin-top: 50px;
+   margin-bottom: 60px;
+}
+.style-radio{
+   max-width: 440px;
+   width: 100%;
+   cursor: pointer;
+}
+.style-radio p{
+   padding-bottom: 10px;
+}
+.style-radio,
+.style-check{
+   margin-top: 45px;
+   margin-bottom: 35px;
+   max-width: 440px;
+   float: left;
+   vertical-align: text-bottom;
+}
+.style-check p{
+   padding-bottom: 20px;;
+}
+.radio-man+label,
+.radio-woman+label{
+   position: relative;
+   padding-left: 82px;
+   color: #1f222c;
+   font: 700 16px "Roboto";
+   cursor: pointer;
+}
+.other+label{
+   position: relative;
+   padding-left: 62px;
+   color: #1f222c;
+   font: 400 14px "Roboto";
+   cursor: pointer;
+}
+.radio-man+label:before,
+.radio-woman+label:before,
+.radio-man:checked+label:before,
+.radio-woman:checked+label:before{
+   content: '';
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   left: 0;
+   top: -27px;
+   background: url(../img/style-check.png) no-repeat;
+}
+.radio-man+label:before{
+   background-position: 0 0;
+}
+.radio-woman+label:before{
+   background-position: -96px 0;
+}
+.radio-man:checked+label:before{
+   background-position: 0 -96px;
+}
+.radio-woman:checked+label:before{
+   background-position: -97px -96px;
+}
+.style-radio p{
+   margin: 55px 0;
+}
+.style-check p:first-child,
+.style-radio p:first-child{
+   margin-top: 0;
+}
+.style-check p:not(p:last-child){
+   margin-bottom: 30px;
+}
+.other+label:before{
+   content: '';
+   position: absolute;
+   width: 45px;
+   height: 25px;
+   border-radius: 12px;
+   background-color: #cfcfd1;
+   left: 0;
+   top: -5px;
+   transition: all .5s ease;
+   cursor: pointer;
+}
+.other:checked+label:before{
+   background-color: #3e6aff;
+}
+.other+label:after{
+   content: '';
+   position: absolute;
+   width: 21px;
+   height: 21px;
+   border-radius: 10px;
+   box-shadow: 0 0 2.5px rgba(0,0,0,0.5);
+   background-color: #fff;
+   left: 2.5px;
+   top: -3px;
+   transition: all .5s ease;    
+   cursor: pointer;
+}
+.other:checked+label:after{
+   left: 21px;
+}
+/*04. форма таблицею*/
+
 
 
 
