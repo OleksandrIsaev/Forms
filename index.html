@@ -14,6 +14,9 @@
 <body>
 
     <head>
+
+        <!--01. проста форма-->
+
         <div class="wrapper">
             <div class="begining">
                 <h1>Форми</h1>
@@ -45,6 +48,9 @@
                 </div>
             </div>
         </div>
+
+        <!--06. фіксована форма-->
+
         <form class="form_6" action="sendmail.php" method="get">
             <div class="row">
                 <input class="exit" type="checkbox">
@@ -68,6 +74,9 @@
                 </div>
             </div>
         </form>
+
+        <!--02. елементи-->
+
         <div class="wrapper">
             <div class="elements">
                 <h2>02. елементи</h2>
@@ -125,23 +134,26 @@
                 </form>
             </div>
         </div>
+
+        <!--03. стилізовані чекбокси-->
+
         <div class="wrapper">
             <div class="style-checkbox clear">
                 <h2 class="margins">03. стилізовані чекбокси</h2>
                 <div class="style-radio">
                     <p>
-                        <input class="radio-man" type="radio" id="man" name="gender">
+                        <input class="circkle-man" type="radio" id="man" name="gender">
                         <label for="man">Чоловік</label>
                     </p>
                     <p>
-                        <input class="radio-woman" type="radio" id="woman" name="gender">
+                        <input class="circkle-woman" type="radio" id="woman" name="gender">
                         <label for="woman">Жінка</label>
                     </p>
                 </div>
                 <div class="style-check">
                     <p>
-                        <input class="other" type="checkbox" id="news">
-                        <label for="news">Отримувати новини</label>
+                        <input class="other" type="checkbox" id="news1">
+                        <label for="news1">Отримувати новини</label>
                     </p>
                     <p>
                         <input class="other" type="checkbox" id="buy">
@@ -154,9 +166,67 @@
                 </div>
             </div>
         </div>
+
+        <!--04. форма таблицею-->
+
         <div class="wrapper">
-            <h2>04. форма таблицею</h2>
-            
+            <div class="form-table1">
+                <h2>04. форма таблицею</h2>
+                <h4>Заповніть усі необхідні поля</h4>
+                <div class="form-table">
+                    <table class="table-results">
+                        <tbody class="result">
+                            <tr>
+                                <td>ФІО:</td>
+                                <td>
+                                    <label><input type="text" placeholder="Введіть ім’я"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Пароль:</td>
+                                <td>
+                                    <label><input class="login" type="password"
+                                            placeholder="Введіть не менше 6 символів"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Місто:</td>
+                                <td>
+                                    <label class="opener">
+                                        <select>
+                                            <option value="misto" disabled selected placeholder="Хмельницький"></option>
+                                            <option value="khmelnitsky">Хмельницький</option>
+                                            <option value="vinnytsia">Вінниця</option>
+                                            <option value="lviv">Львів</option>
+                                            <option value="kyiv">Київ</option>
+                                        </select>
+                                    </label></td>
+                            </tr>
+                            <tr>
+                                <td>Стать:</td>
+                                <td> <input class="delivery3" type="radio" id="new_post1" name="radio1">
+                                    <label for="new_post">Чоловік</label>
+                                 <input class="delivery3" type="radio" id="new_post1" name="radio1">
+                                    <label for="new_post">Жінка</label></td>
+                            </tr>
+                            <tr>
+                                <td>Фото:</td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <tr class="last">
+                                <td>Коментарій:</td>
+                                <td><textarea rows="3" cols="30" maxlength="100" placeholder="Email"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="registration" type="submit" value="Зареєструватися">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </head>
 </body>
 
