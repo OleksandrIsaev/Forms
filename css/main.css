@@ -182,6 +182,8 @@ h2{
    top: 0;
    z-index: 1;
 }
+.exit:checked~.form6,
+.exit:checked~h2,
 .exit:checked{
    display: none;
 }
