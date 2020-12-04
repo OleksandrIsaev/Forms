@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
 </head>
 
 <body>
-
     <head>
 
         <!--01. проста форма-->
@@ -66,8 +64,8 @@
                     </p>
                     <a href="#">Забули пароль?</a>
                     <p>
-                        <input class="delivery2" type="checkbox" id="reads">
-                        <label for="reads">Запам’ятати пароль</label>
+                        <input class="remember_pw" type="checkbox" id="remember"/>
+                        <label class="remember-label" for="remember">Запам'ятати пароль</label>
                     </p>
                     <p>
                         <input class="registration2" type="submit" value="Увійти">
@@ -186,7 +184,8 @@
                             <tr>
                                 <td>Пароль:</td>
                                 <td>
-                                    <label><input class="login1" type="password" placeholder="Введіть не менше 6 символів"></label>
+                                    <label><input class="login1" type="password"
+                                            placeholder="Введіть не менше 6 символів"></label>
                                 </td>
                             </tr>
                             <tr>
@@ -205,10 +204,12 @@
                             </tr>
                             <tr>
                                 <td>Стать:</td>
-                                <td> <input class="delivery3" type="radio" id="new_post1" name="radio1">
+                                <td>
+                                    <input class="r-men" type="radio" id="new_post1" name="radio1">
                                     <label for="new_post">Чоловік</label>
-                                 <input class="delivery3" type="radio" id="new_post1" name="radio1">
-                                    <label for="new_post">Жінка</label></td>
+                                    <input class="r-women" type="radio" id="new_post1" name="radio1">
+                                    <label for="new_post">Жінка</label>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Фото:</td>
@@ -228,6 +229,7 @@
                 </div>
             </div>
         </div>
+        
     </head>
 </body>
 
