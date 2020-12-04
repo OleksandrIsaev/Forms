@@ -77,7 +77,7 @@ h2{
 }
 .form1 input{
    padding: 0 16px;
-   margin: 10px 0;
+   margin: 5px 0;
    width: 330px;
    height: 40px;
    border-radius: 3px;
@@ -96,7 +96,7 @@ h2{
 }
 .form1 select{
    padding: 0 16px;
-   margin: 10px 0;
+   margin: 5px 0;
    width: 330px;
    height: 40px;
    font-size: 14px;
@@ -117,7 +117,7 @@ h2{
    content: "";
    position: absolute;
    right: 20px;
-   top: 25px;
+   top: 20px;
    border: 4px solid transparent;
    border-bottom-color: #1f222c;
    border-right-color: #1f222c;
@@ -145,6 +145,7 @@ h2{
 }
 .form1 textarea{
    padding: 15px 16px;
+   margin-top: 5px;
    width: 330px;
    height: 130px;
    border-radius: 3px;
@@ -480,9 +481,9 @@ h2{
    font: 700 16px "Roboto";
    cursor: pointer;
 }
-.circkle-man+label:hover,
-.circkle-woman+label:hover{
-   color:  #3e6aff;;
+.circkle-woman:checked+.woman b,
+.circkle-man:checked+.man b{
+   color: #3e6aff;
 }
 
 .other+label{
