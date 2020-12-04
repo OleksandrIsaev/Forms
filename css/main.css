@@ -480,6 +480,11 @@ h2{
    font: 700 16px "Roboto";
    cursor: pointer;
 }
+.circkle-man+label:hover,
+.circkle-woman+label:hover{
+   color:  #3e6aff;;
+}
+
 .other+label{
    position: relative;
    padding-left: 62px;
