@@ -109,11 +109,13 @@ h2{
    background-color: transparent;
    cursor: pointer;
 }
-.opener {
+.opener,
+.opener1{
    position: relative;
    display: inline-block;
 }
-.opener::after{
+.opener::after,
+.opener1::after{
    content: "";
    position: absolute;
    right: 20px;
@@ -122,6 +124,10 @@ h2{
    border-bottom-color: #1f222c;
    border-right-color: #1f222c;
    transform: rotate(45deg);
+}
+.opener1::after{
+   right: 20px;
+   top: 15px;
 }
 .highttop{
    margin: 0;
@@ -150,7 +156,7 @@ h2{
    height: 130px;
    border-radius: 3px;
    border-color: #ccc;
-   resize: horizontal;
+   resize: none;
    font: 400 14px "Roboto";
 }
 .registration{
@@ -562,5 +568,130 @@ h2{
 }
 
 /*04. форма таблицею*/
+
+.form-table{
+   max-width: 50%;
+}
+.table_form{
+   width: 100%;
+   border-collapse: collapse;
+   box-sizing: border-box;
+}
+.tform-heading{
+   color: #1f222c;
+   font: 700 18px "Roboto"
+}
+.fullname{
+   text-transform: uppercase;
+}
+.tform-text,
+.town-select{
+   padding: 12px;
+   width: 340px;
+   height: 40px;;
+   cursor: pointer;
+}
+.town-select{
+   border-radius: 3px;
+}
+.tform-text:hover,
+.town-select:hover{
+   width: 340px;
+   height: 41px;
+   border-radius: 3px;
+   filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
+   background-color: #ffffff;
+   border: 1px solid #3e6aff;
+}
+.table_form select{
+   appearance: none;
+   position: relative;
+   display: inline-block;
+}
+.table_form td:not(.tform-heading):not(td:last-child){
+   max-width: 160px;
+   width: 100%;
+   color: #1f222c;
+   font: 400 14px "Roboto";
+}
+.table_form td:last-child{
+   max-width: 340px;
+}
+.tform-select:after{
+   top: 9px;
+   right: -317px;
+}
+.r-men+label{
+   margin-right: 20px;
+}
+.upload{
+   display: none;
+}
+.upload-file{
+   display: block;
+   padding: 12px;
+   width: 146px;
+   text-align: center;
+   color: #fff;
+   font: 700 14px "Roboto";
+   border-radius: 3px;
+   background-color: #3e6aff;
+}
+.upload-file:hover{
+   box-shadow: 0px 2px 2.5px rgba(15,40,126,0.35);
+   background-color: #2857f4;
+   cursor: pointer;
+}
+.upload-file span:hover{
+   cursor: pointer;
+}
+.tform-textarea{
+   padding: 15px 15px 12px;
+   color: #b3b3b3;
+   font: 400 14px "Roboto";
+   width: 100%;
+   max-width: 340px;
+   height: 130px;
+   max-height: 130px;
+   border-radius: 3px;
+   background-color: #fff;
+   border: 1px solid #ccc;
+}
+.table_form tr{
+   vertical-align: text-bottom;
+}
+.table_form td{
+   padding-bottom: 15px;
+}
+.table_form td:first-child{
+   padding-bottom: 20px;
+}
+.tform-commit{
+   vertical-align: top;
+}
+.tform-commit label{
+   display: inline-block;
+   padding-top: 15px;
+   top: 15px;    
+}
+.tform-button{
+   margin-bottom: 50px;
+   width: 340px;
+   height: 43px;
+   border-radius: 3px;
+   background-color: #12d661;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+}
+.tform-button:hover{
+   width: 340px;
+   height: 43px;
+   border-radius: 3px;
+   filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+   background-color: #07be51;
+   border: none;
+   cursor: pointer;
+}
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 </head>
 
 <body>
+
     <head>
 
         <!--01. проста форма-->
@@ -38,7 +40,7 @@
                                 <option value="kyiv">Київ</option>
                             </select>
                         </label>
-                        <textarea rows="3" cols="30" maxlength="100" placeholder="Текст"></textarea>
+                        <textarea placeholder="Текст" rows="10" cols="20"></textarea>
                         <p class="highttop">
                             <input class="registration" type="submit" value="Зареєструватися">
                         </p>
@@ -169,65 +171,67 @@
         <!--04. форма таблицею-->
 
         <div class="wrapper">
-            <div class="form-table1">
-                <h2>04. форма таблицею</h2>
-                <h4>Заповніть усі необхідні поля</h4>
-                <div class="form-table">
-                    <table class="table-results">
-                        <tbody class="result">
-                            <tr>
-                                <td>ФІО:</td>
-                                <td>
-                                    <label><input class="login1" type="text" placeholder="Введіть ім’я"></label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Пароль:</td>
-                                <td>
-                                    <label><input class="login1" type="password"
-                                            placeholder="Введіть не менше 6 символів"></label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Місто:</td>
-                                <td>
-                                    <label class="opener">
-                                        <select>
-                                            <option value="misto" disabled selected placeholder="Хмельницький"></option>
-                                            <option value="khmelnitsky">Хмельницький</option>
-                                            <option value="vinnytsia">Вінниця</option>
-                                            <option value="lviv">Львів</option>
-                                            <option value="kyiv">Київ</option>
-                                        </select>
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Стать:</td>
-                                <td>
-                                    <input class="r-men" type="radio" id="new_post1" name="radio1">
-                                    <label for="new_post">Чоловік</label>
-                                    <input class="r-women" type="radio" id="new_post1" name="radio1">
-                                    <label for="new_post">Жінка</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Фото:</td>
-                                <td><input type="file"></td>
-                            </tr>
-                            <tr class="last">
-                                <td>Коментарій:</td>
-                                <td><textarea rows="3" cols="30" maxlength="100" placeholder="Email"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input class="registration3" type="submit" value="Зареєструватися">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <h2>04. форма таблицею</h2>
+            <form action="registration.php" method="post">
+                <table class="table_form">
+                    <tr>
+                        <td class="tform-heading" colspan="2">Заповніть усі необхідні поля</td>
+                    </tr>
+                    <tr>
+                        <td><label class="fullname" for="fio">фіо:</label></td>
+                        <td><input class="tform-text" type="text" id="fio" name="names" required
+                                placeholder="Введіть ім'я" maxlength="35" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="p-w">Пароль:</label></td>
+                        <td><input class="tform-text" type="password" id="p-w" name="user_p-w" required
+                                placeholder="Введіть не менше 6 символів" minlength="6" maxlength="25" /></td>
+                    </tr>
+                    <tr>
+                        <td><label class="tform-select" for="town">Місто:</label></td>
+                        <td>
+                            <label class="opener1">
+                                <select class="town-select" id="town" name="town">
+                                    <option class="option-tform" selected value="khmel">Хмельницький</option>
+                                    <option class="option-tform" value="kyiv2">Київ</option>
+                                    <option class="option-tform" value="lviv2">Львів</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Стать:</td>
+                        <td>
+                            <input class="r-men" type="radio" id="men" name="gender-radio" />
+                            <label for="men">Чоловік</label>
+                            <input class="r-women" type="radio" id="women" name="gender-radio" />
+                            <label for="women">Жінка</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="file-button">Фото:</label></td>
+                        <td>
+                            <div class="upload-file">
+                                <label for="file-button">
+                                    <input class="upload" type="file" id="file-button" name="photo" />
+                                    <span>Виберіть файл</span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="commit">
+                        <td class="tform-commit"><label for="table-textarea">Коментарій:</label></td>
+                        <td><textarea class="tform-textarea" rows="10" cols="20" id="table-textarea"
+                                name="tform-comment" placeholder="Введіть текст повідомлення"
+                                resize="vertical"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label><input class="tform-button" type="submit" value="Зареєструватися" /></label></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
         </div>
     </head>
 </body>
