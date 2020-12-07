@@ -53,7 +53,7 @@
 
         <form class="form_6" action="sendmail.php" method="get">
             <div class="row">
-                <input class="exit" type="checkbox">
+                <label class="exit" type="checkbox" for="sss"></label>
                 <h2>06. фіксована форма</h2>
                 <div class="form6">
                     <i>Логин</i>
@@ -236,65 +236,70 @@
             <div class="form-table5">
                 <h2>05. форма таблицею</h2>
                 <h3>Оформлення заявки</h3>
-                    <table class="oform1">
-                        <tr>
-                            <td><label for="surname">Прізвище та ім'я</label></td>
-                            <td><label for="mail">Ел. пошта</label></td>
-                            <td><label for="phone">Телефон</label></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="tform-text5 table5" type="text" id="f_i" name="name5" value="Василь Вірастюк" required maxlength="30"/>
-                            </td>
-                            <td>
-                                <input class="tform-text5 table5" type="email" id="mail" name="user_email5" required maxlength="30"/>
-                            </td>
-                            <td>
-                                <input class="tform-text5 table5" type="tel" id="phone" name="user_tel5" required maxlength="15"/>
-                            </td>
-                        </tr>
-                    </table>
-                    <hr class="hr-line1">
-                    <table class="oform2">
-                        <tr>
-                            <td><label class="tform-select5" for="country">Країна</label></td>
-                            <td colspan="2"><label for="adres1">Адреса</label></td>
-                        </tr>
-                        <tr>
-                            <td class="td-country">
-                                <select class="country-select table5" id="country" name="country">
-                                    <option class="option-tform5 table5" selected value="ind">Індонезія</option>
-                                </select>
-                            </td>
-                            <td colspan="2"><input class="adresa table5" type="text" id="adres1" name="adresa"
-                                    maxlength="50"/></td>
-                        </tr>
-                        <tr>
-                            <td><label for="town5">Місто</label></td>
-                            <td><label for="house">Будинок</label></td>
-                            <td><label for="postcode">Поштовий індекс</label></td>
-                        </tr>
-                        <tr>
-                            <td><input class="gorod table5" type="text" id="town5" name="misto" maxlength="30"/></td>
-                            <td><input class="table5" id="house" name="house"/></td>
-                            <td><input class="table5" id="postcode" name="post-index"/></td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <input class="delivery3" type="checkbox" id="reads5"/>
-                                <label class="reads4" for="reads5">Я погоджуюсь з правилами оплати та доставки товару</label>
-                            </td>
-                        </tr>
-                    </table>
-                    <hr class="hr-line2">
-                    <p class="clear">
-                        <label>
-                            <input class="tform-button5 tform5-back" type="button" value="Повернутися назад" onclick="history.back(-1)"/>
-                            </label>
-                        <label>
-                            <input class="tform-button5 tform5-submit" type="submit" value="Оформити покупку"/>
-                        </label>
-                    </p>
+                <table class="oform1">
+                    <tr>
+                        <td><label for="surname">Прізвище та ім'я</label></td>
+                        <td><label for="mail">Ел. пошта</label></td>
+                        <td><label for="phone">Телефон</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="tform-text5 table5" type="text" id="f_i" name="name5" value="Василь Вірастюк"
+                                required maxlength="30" />
+                        </td>
+                        <td>
+                            <input class="tform-text5 table5" type="email" id="mail" name="user_email5" required
+                                maxlength="30" />
+                        </td>
+                        <td>
+                            <input class="tform-text5 table5" type="tel" id="phone" name="user_tel5" required
+                                maxlength="15" />
+                        </td>
+                    </tr>
+                </table>
+                <hr class="hr-line1">
+                <table class="oform2">
+                    <tr>
+                        <td><label class="tform-select5" for="country">Країна</label></td>
+                        <td colspan="2"><label for="adres1">Адреса</label></td>
+                    </tr>
+                    <tr>
+                        <td class="td-country">
+                            <select class="country-select table5" id="country" name="country">
+                                <option class="option-tform5 table5" selected value="ind">Індонезія</option>
+                            </select>
+                        </td>
+                        <td colspan="2"><input class="adresa table5" type="text" id="adres1" name="adresa"
+                                maxlength="50" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="town5">Місто</label></td>
+                        <td><label for="house">Будинок</label></td>
+                        <td><label for="postcode">Поштовий індекс</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="gorod table5" type="text" id="town5" name="misto" maxlength="30" /></td>
+                        <td><input class="table5" id="house" name="house" /></td>
+                        <td><input class="table5" id="postcode" name="post-index" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input class="delivery3" type="checkbox" id="reads5" />
+                            <label class="reads4" for="reads5">Я погоджуюсь з правилами оплати та доставки
+                                товару</label>
+                        </td>
+                    </tr>
+                </table>
+                <hr class="hr-line2">
+                <p class="clear">
+                    <label>
+                        <input class="tform-button5 tform5-back" type="button" value="Повернутися назад"
+                            onclick="history.back(-1)" />
+                    </label>
+                    <label>
+                        <input class="tform-button5 tform5-submit" type="submit" value="Оформити покупку" />
+                    </label>
+                </p>
                 </form>
             </div>
         </div>

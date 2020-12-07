@@ -54,6 +54,23 @@ textarea{
    width: 330px;
    vertical-align: middle;
 }
+.table5:focus,
+.gorod:focus,
+.adresa:focus,
+.country-select:focus,
+.tform-text5:focus,
+.tform-textarea:focus,
+.town-select:focus,
+.table_form input:focus,
+.form1 input:focus,
+.login:focus,
+.form1 textarea:focus{
+   border: 1px solid #3e6aff;
+   border-radius: 3px;
+   box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
+   border: 1px solid #3e6aff;
+   outline: none;
+}
 
 /*01. проста форма*/
 
@@ -134,6 +151,7 @@ h3{
    border-right-color: #1f222c;
    transform: rotate(45deg);
    cursor: pointer;
+   z-index: 0;
 }
 .opener1::after{
    right: 20px;
@@ -190,12 +208,10 @@ h3{
 /*06. фіксована форма*/
 
 .form_6{
-   float: right;
-   padding-top: 9%;
    width: 37%;
    position: fixed;
    right: 0;
-   top: 0;
+   top: 125px;
    z-index: 1;
 }
 .exit:checked~.form6,
@@ -205,7 +221,6 @@ h3{
 }
 .exit{
    position: absolute;
-   appearance: none;
    left: 300px;
    bottom: 255px;
    margin: 10px;
@@ -303,7 +318,7 @@ h3{
    position: absolute;
    width: 10px;
    height: 2px;
-   right: 10px;
+   right: 280px;
    transform: rotate(45deg);
    background-color: #b3b3b3;
 }
@@ -336,7 +351,7 @@ h3{
 }
 .date{
    margin-bottom: 50px;
-   max-width: 473px;
+   width: 473px;
    border-radius: 3px;
    border: 1px solid #e5e5e5;
 }
@@ -633,6 +648,7 @@ h3{
    appearance: none;
    position: relative;
    display: inline-block;
+   -webkit-apierence: none;
 }
 .table_form td:not(.tform-heading):not(td:last-child){
    max-width: 160px;
@@ -764,6 +780,7 @@ select.country-select{
    border-right-color: #1f222c;
    transform: rotate(45deg);
    cursor: pointer;
+   z-index: 0;
 }
 .adresa{
    width: 450px;
