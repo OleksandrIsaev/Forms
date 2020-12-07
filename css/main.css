@@ -43,8 +43,9 @@ textarea{
    border-bottom: 1px solid #dcdcde;
 }
 .wrapper1{
-   margin-left: 145px;
-   max-width: 990px;
+   margin: 0 auto;
+   max-width: 80%;
+
 }
 .row{
    display: block;
@@ -131,6 +132,7 @@ h3{
    border-radius: 3px;
    border: 1px solid #ccc;
    appearance: none;
+   -webkit-appearance: none;
    outline: none;
    background-color: transparent;
    cursor: pointer;
@@ -645,10 +647,13 @@ h3{
    border: 1px solid #3e6aff;
 }
 .table_form select{
-   appearance: none;
-   position: relative;
    display: inline-block;
-   -webkit-apierence: none;
+   position: relative;
+   appearance: none;
+   -webkit-appearance: none;
+}
+.town-select{
+   -webkit-apierence: hidden;
 }
 .table_form td:not(.tform-heading):not(td:last-child){
    max-width: 160px;
@@ -755,6 +760,8 @@ select.country-select{
    font: 400 14px "Roboto";
    border-radius: 3px;
    border: 1px solid #ccc;
+   -webkit-appearance: none;
+
 }
 .table5:hover,
 .country-select:hover,
