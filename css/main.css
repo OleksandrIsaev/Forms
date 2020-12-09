@@ -45,7 +45,6 @@ textarea{
 .wrapper1{
    margin: 0 auto;
    max-width: 80%;
-
 }
 .row{
    display: block;
@@ -748,7 +747,7 @@ h3{
 }
 .oform1,
 .oform2{
-   width: 100%;
+   width: 680px;
    border-collapse: collapse;
 }
 .table5,
@@ -830,6 +829,8 @@ select.country-select{
    cursor: pointer;
 }
 .form-table5 hr{
+   width: 680px;
+   float: left;
    margin-top: 0;
    border: 1px solid #e9e9e9;
 }
@@ -848,8 +849,7 @@ select.country-select{
    padding-top: 10px;
    padding-right: 10px;
 }
-.tform5-submit{
-   float: right;
+.tform5-submit{;
    width: 180px;
    height: 40px;
    color: #fff;
@@ -866,6 +866,7 @@ select.country-select{
    background-color: #07be51;
 }
 .tform5-back{
+   margin-right: 320px;
    width: 180px;
    height: 40px;
    color: #6e6f77;
