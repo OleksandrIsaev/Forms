@@ -743,7 +743,7 @@ h3{
 /*05. Форма таблицею*/
 
 .form-table5{
-   width: 69%;
+   width: 61%;
 }
 .oform1,
 .oform2{
@@ -850,6 +850,7 @@ select.country-select{
    padding-right: 10px;
 }
 .tform5-submit{;
+   float: right;
    width: 180px;
    height: 40px;
    color: #fff;
@@ -866,7 +867,6 @@ select.country-select{
    background-color: #07be51;
 }
 .tform5-back{
-   margin-right: 320px;
    width: 180px;
    height: 40px;
    color: #6e6f77;
