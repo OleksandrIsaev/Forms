@@ -24,27 +24,29 @@
             <div class="forms">
                 <div class="row">
                     <h2>01. проста форма</h2>
-                    <div class="form1 column">
-                        <label>
-                            <input type="text" placeholder="Введіть ім'я">
-                        </label>
-                        <label>
-                            <input type="email" placeholder="Email" maxlength="120">
-                        </label>
-                        <label class="opener">
-                            <select>
-                                <option value="misto" disabled selected>Ваше місто</option>
-                                <option value="khmelnitsky">Хмельницький</option>
-                                <option value="vinnytsia">Вінниця</option>
-                                <option value="lviv">Львів</option>
-                                <option value="kyiv">Київ</option>
-                            </select>
-                        </label>
-                        <textarea placeholder="Текст" rows="10" cols="20"></textarea>
-                        <p class="highttop">
-                            <input class="registration" type="submit" value="Зареєструватися">
-                        </p>
-                    </div>
+                    <form action="php/forma.php" method="POST">
+                        <div class="form1 column">
+                            <label>
+                                <input name="name" type="text" placeholder="Введіть ім'я">
+                            </label>
+                            <label>
+                                <input name="mail" type="email" placeholder="Email" maxlength="120">
+                            </label>
+                            <label name="city" class="opener">
+                                <select>
+                                    <option value="misto" disabled selected>Ваше місто</option>
+                                    <option value="khmelnitsky">Хмельницький</option>
+                                    <option value="vinnytsia">Вінниця</option>
+                                    <option value="lviv">Львів</option>
+                                    <option value="kyiv">Київ</option>
+                                </select>
+                            </label>
+                            <textarea placeholder="Текст" rows="10" cols="20"></textarea>
+                            <p class="highttop">
+                                <input class="registration" type="submit" value="Зареєструватися">
+                            </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -55,24 +57,30 @@
             <div class="row">
                 <label class="exit" type="checkbox" for="sss"></label>
                 <h2>06. фіксована форма</h2>
-                <div class="form6">
-                    <i>Логин</i>
-                    <p>
-                        <input class="login" type="login">
-                    </p>
-                    <i>Пароль</i>
-                    <p>
-                        <input class="login" type="password">
-                    </p>
-                    <a href="#">Забули пароль?</a>
-                    <p>
-                        <input class="delivery2" type="checkbox" id="reads1">
-                        <label for="reads1">Запам’ятати пароль</label>
-                    </p>
-                    <p>
-                        <input class="registration2" type="submit" value="Увійти">
-                    </p>
-                </div>
+                <form action="php/forma1.php" method="POST">
+                    <div class="form6">
+                        <i>Логин</i>
+                        <p>
+                            <label>
+                                <input name="name1" class="login" type="text">
+                            </label>
+                        </p>
+                        <i>Пароль</i>
+                        <p>
+                            <label>
+                                <input name="name2" class="login" type="password">
+                            </label>
+                        </p>
+                        <a href="#">Забули пароль?</a>
+                        <p>
+                            <input class="delivery2" type="checkbox" id="reads1">
+                            <label for="reads1">Запам’ятати пароль</label>
+                        </p>
+                        <p>
+                            <input class="registration2" type="submit" value="Увійти">
+                        </p>
+                    </div>
+                </form>
             </div>
         </form>
 
@@ -300,7 +308,6 @@
                         <input class="tform-button5 tform5-submit" type="submit" value="Оформити покупку" />
                     </label>
                 </p>
-                </form>
             </div>
         </div>
     </head>

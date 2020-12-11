@@ -110,7 +110,7 @@ h3{
    border: 1px solid #ccc;
    outline: none;
    font-size: 14px;
-   font-weight: 400;
+   font-weight: 400; 
 }
 .form1 textarea:hover,
 .form1 select:hover,
@@ -849,7 +849,7 @@ select.country-select{
    padding-top: 10px;
    padding-right: 10px;
 }
-.tform5-submit{;
+.tform5-submit{
    float: right;
    width: 180px;
    height: 40px;
