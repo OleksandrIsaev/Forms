@@ -153,6 +153,7 @@ h3{
    transform: rotate(45deg);
    cursor: pointer;
    z-index: 0;
+   background-color: transparent;
 }
 .opener1::after{
    right: 20px;
@@ -274,6 +275,8 @@ h3{
    padding: 12px;
    width: 265px;
    height: 35px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
 }
 .login:hover{
    padding: 12px;
@@ -352,7 +355,7 @@ h3{
 }
 .date{
    margin-bottom: 50px;
-   width: 473px;
+   width: 480px;
    border-radius: 3px;
    border: 1px solid #e5e5e5;
 }
@@ -489,7 +492,7 @@ h3{
    outline: none;
 }
 .date .delivery2+label{
-   margin-right: 20px;
+   margin-right: 6px;
 }
 .status tr{
    vertical-align: text-bottom;
@@ -615,7 +618,7 @@ h3{
    max-width: 50%;
 }
 .table_form{
-   width: 100%;
+   width: 1200px;
    border-collapse: collapse;
    box-sizing: border-box;
 }
@@ -632,6 +635,8 @@ h3{
    width: 340px;
    height: 40px;;
    cursor: pointer;
+   border: 1px solid #ccc;
+   border-radius: 3px;
 }
 .town-select{
    border-radius: 3px;
@@ -655,13 +660,9 @@ h3{
    -webkit-apierence: hidden;
 }
 .table_form td:not(.tform-heading):not(td:last-child){
-   max-width: 160px;
-   width: 100%;
+   width: 160px;
    color: #1f222c;
    font: 400 14px "Roboto";
-}
-.table_form td:last-child{
-   max-width: 340px;
 }
 .tform-select:after{
    top: 9px;
@@ -673,17 +674,15 @@ h3{
 .upload{
    display: none;
 }
-.upload-file{
-   display: block;
-   padding: 12px;
-   width: 146px;
+span{
+   padding: 12px 38px;
    text-align: center;
    color: #fff;
    font: 700 14px "Roboto";
    border-radius: 3px;
    background-color: #3e6aff;
 }
-.upload-file:hover{
+.span:hover{
    box-shadow: 0px 2px 2.5px rgba(15,40,126,0.35);
    background-color: #2857f4;
    cursor: pointer;
