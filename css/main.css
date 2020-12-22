@@ -640,21 +640,14 @@ h3{
 }
 .town-select{
    border-radius: 3px;
-}
-.tform-text:hover,
-.town-select:hover{
-   width: 340px;
-   height: 40px;
-   border-radius: 3px;
-   filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
-   background-color: #ffffff;
-   border: 1px solid #3e6aff;
-}
+}`
 .table_form select{
    display: inline-block;
    position: relative;
    appearance: none;
    -webkit-appearance: none;
+   background-color: transparent;
+   z-index: 1;
 }
 .town-select{
    -webkit-apierence: hidden;
@@ -759,17 +752,9 @@ select.country-select{
    border-radius: 3px;
    border: 1px solid #ccc;
    -webkit-appearance: none;
+   background-color: transparent;
+   z-index: 0;
 
-}
-.table5:hover,
-.country-select:hover,
-.oform1 input:hover{
-   width: 220px;
-   height: 40px;
-   border-radius: 3px;
-   filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
-   background-color: #ffffff;
-   border: 1px solid #3e6aff;
 }
 .td-country{
    position: relative;
@@ -785,7 +770,8 @@ select.country-select{
    border-right-color: #1f222c;
    transform: rotate(45deg);
    cursor: pointer;
-   z-index: 0;
+   z-index: -1;
+   background-color: transparent;
 }
 .adresa{
    width: 450px;
