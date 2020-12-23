@@ -112,14 +112,6 @@ h3{
    font-size: 14px;
    font-weight: 400; 
 }
-.form1 textarea:hover,
-.form1 select:hover,
-.form1 input:hover{
-   border-radius: 3px;
-   filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
-   background-color: #ffffff;
-   border: 1px solid #3e6aff;
-}
 .form1 select{
    padding: 0 16px;
    margin: 5px 0;
@@ -152,7 +144,7 @@ h3{
    border-right-color: #1f222c;
    transform: rotate(45deg);
    cursor: pointer;
-   z-index: 0;
+   z-index: -1;
    background-color: transparent;
 }
 .opener1::after{
@@ -216,33 +208,54 @@ h3{
    top: 125px;
    z-index: 1;
 }
-.exit:checked~.form6,
-.exit:checked~h2,
-.exit:checked{
-   display: none;
-}
-.exit{
+#checkbox{
+   visibility: hidden;
    position: absolute;
-   left: 300px;
-   bottom: 255px;
-   margin: 10px;
-   right: 0;
-   z-index: 1;
+ }
+ #checkbox+label{
+   position: absolute;
+   top: 93px;
+   left: 284px;
+   width: 15px;
+   height: 15px;
+   background-color: #fafafa;
    cursor: pointer;
-}
-.exit::after,
-.exit::before{
+   z-index: 1;
+ }
+ #checkbox+label:before,
+ #checkbox+label:after{
    content: "";
    position: absolute;
-   width: 10px;
-   height: 2px;
-   right: 10px;
-   transform: rotate(45deg);
+   top: 3px;
+   left: 6px;
+   width: 2px;
+   height: 10px;
    background-color: #b3b3b3;
-}
-.exit::after{
+ }
+ #checkbox+label:before{
+   transform: rotate(45deg);
+ }
+ #checkbox+label:after{
    transform: rotate(-45deg);
-}
+ }
+ #checkbox:checked+label{
+   background-color: transparent;
+ }
+ #checkbox:checked+label:before{
+   content: "Open form";
+   padding: 10px;
+   width: auto;
+   height: auto;
+   background-color: green;
+   border-radius: 5px;
+ }
+ #checkbox:checked+label:after{
+   display: none;
+ }
+ #checkbox:checked~h2,
+ #checkbox:checked~.block{
+   display: none;
+ }
 .form6 p{
    margin: 0;
    padding: 0;
@@ -315,19 +328,6 @@ h3{
    border-radius: 3px;
    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
    background-color: #07be51;
-}
-.exit::after,
-.exit::before{
-   content: "";
-   position: absolute;
-   width: 10px;
-   height: 2px;
-   right: 105%;
-   transform: rotate(45deg);
-   background-color: #b3b3b3;
-}
-.exit::before{
-   transform: rotate(-45deg);
 }
 
 /*02. елементи*/
@@ -637,6 +637,8 @@ h3{
    cursor: pointer;
    border: 1px solid #ccc;
    border-radius: 3px;
+   appearance: none;
+   background-color: transparent;
 }
 .town-select{
    border-radius: 3px;
