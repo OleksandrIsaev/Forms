@@ -642,7 +642,7 @@ h3{
 }
 .town-select{
    border-radius: 3px;
-}`
+}
 .table_form select{
    display: inline-block;
    position: relative;
@@ -684,6 +684,11 @@ span{
 }
 .upload-file span:hover{
    cursor: pointer;
+   width: 170px;
+   height: 41px;
+   border-radius: 3px;
+   filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
+   background-color: #2857f4;
 }
 .tform-textarea{
    padding: 15px 15px 12px;
