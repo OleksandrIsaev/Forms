@@ -37,6 +37,12 @@ textarea{
    display: block;
    clear: both;
 }
+.clear1{
+   content: "";
+   display: block;
+   clear: both;
+   width: 600px;
+}
 .wrapper{
    margin: 0 auto;
    max-width: 80%;
