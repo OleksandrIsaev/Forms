@@ -39,9 +39,9 @@ textarea{
 }
 .clear1{
    content: "";
-   display: block;
+   display: inline-block;
    clear: both;
-   width: 650px;
+   width: 686px;
 }
 .wrapper{
    margin: 0 auto;
