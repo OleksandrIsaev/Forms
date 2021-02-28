@@ -328,6 +328,7 @@ h3{
    border-radius: 3px;
    background-color: #12d661;
    cursor: pointer;
+   font-size: 14px;
 }
 .registration2:hover{
    border-radius: 3px;
@@ -582,9 +583,6 @@ h3{
 .style-radio p:first-child{
    margin-top: 0;
 }
-.style-check p:not(p:last-child){
-   margin-bottom: 30px;
-}
 .other+label:before{
    content: '';
    position: absolute;
@@ -623,7 +621,6 @@ h3{
    max-width: 50%;
 }
 .table_form{
-   width: 1200px;
    border-collapse: collapse;
    box-sizing: border-box;
 }
@@ -733,6 +730,7 @@ span{
    color: #fff;
    border: none;
    cursor: pointer;
+   font-size: 14px;
 }
 .tform-button:hover{
    width: 340px;
@@ -855,6 +853,7 @@ select.country-select{
    border-radius: 3px;
    background-color: #12d661;
    border: none;
+   font-size: 14px;
 }
 .tform5-submit:hover{
    width: 180px;
@@ -872,6 +871,7 @@ select.country-select{
    background-color: #fff;
    border: 1px solid #85868d;
    outline: none;
+   font-size: 14px;
 }
 .tform5-back:hover{
    color: #fff;
